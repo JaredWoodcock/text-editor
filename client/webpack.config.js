@@ -28,12 +28,13 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+      // Generate manifest.json
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'TEditor',
-        description: 'Text Editor',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E.',
+        description: 'Takes notes with JavaScript syntax highlighting!',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         start_url: '/',
